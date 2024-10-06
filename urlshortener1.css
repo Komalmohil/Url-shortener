@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    width: 55%;
+    height:35%;
+    box-shadow: 0 0 10px rgba(48, 116, 128, 0.516);
+    border-radius: 10px;
+}
+
+.url-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.url-form input {
+    width: 80%;
+    padding: 20px;
+    font-size: 18px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#crossBtn {
+    padding: 2px 6px;
+    font-size: 16px;
+    background-color: #fcfcfc;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+    display: none; 
+}
+
+#shorten-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+button#shorten-btn:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#result a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#result a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+        max-width: 95%;
+    }
+
+    .url-form input {
+        width: 70%;
+    }
+}
